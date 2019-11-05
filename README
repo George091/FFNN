@@ -1,14 +1,15 @@
-HOW TO RUN CODE -
-
-To run the program and see the model's performance: Run the python file "FFNN.py". Given all used packages are installed, a model serialized using pickle will be imported from the file "FFNNs". The model contained in this file has an accuracy of 97%. Using this method allows you to skip the training process to see what this model is capable of. The model's accuracy will be tested on data not trained on, which is 20% of the MNIST dataset, and 10 of my own hand drawn images (computer drawn using GIMP). The network I've trained is a model with 800 nodes for the first hidden layer, 500 nodes for the second hidden layer, and a learning rate of 0.01. 
-
-To watch a new model train using 80% of the MNIST dataset: Uncomment lines 187 to 195 and run the python file "FFNN.py". The model will be tested before each epoch of the training data. During testing, the model will attempt to predict the handwritten digit for 14,000 of the handwritten digits in the MNIST test set. For wrong predictions, the model prints to the python console what the actual handwritten digit is, the model's prediction and it's confidence in that prediction, and the raw one hot encoded model's prediction. * note it is not necessary to comment out the pickle code that brings in the serialized FFNN as a new FFNN is initialized over that serialized FFNN.
-
 GENERAL OVERVIEW -
 
 This is the readme for the "FFNN.py" file, created by George Barker for CSCI315 Artificial Intelligence with Professor Cody Watson. 
 
 This python file codes a FEED FORWARD NEURAL NETWORK (FFNN) with 97% accuracy trained using the MNIST dataset to recognize and predict handwritten digits.
+
+
+HOW TO RUN CODE -
+
+To run the program and see the model's performance: Run the python file "FFNN.py". Given all used packages are installed, a model serialized using pickle will be imported from the file "FFNNs". The model contained in this file has an accuracy of 97%. Using this method allows you to skip the training process to see what this model is capable of. The model's accuracy will be tested on data not trained on, which is 20% of the MNIST dataset, and 10 of my own hand drawn images (computer drawn using GIMP). The network I've trained is a model with 800 nodes for the first hidden layer, 500 nodes for the second hidden layer, and a learning rate of 0.01. 
+
+To watch a new model train using 80% of the MNIST dataset: Uncomment lines 187 to 195 and run the python file "FFNN.py". The model will be tested before each epoch of the training data. During testing, the model will attempt to predict the handwritten digit for 14,000 of the handwritten digits in the MNIST test set. For wrong predictions, the model prints to the python console what the actual handwritten digit is, the model's prediction and it's confidence in that prediction, and the raw one hot encoded model's prediction. * note it is not necessary to comment out the pickle code that brings in the serialized FFNN as a new FFNN is initialized over that serialized FFNN.
 
 METHODS -
 
