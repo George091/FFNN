@@ -52,19 +52,19 @@ I used back propagation to find the change in error with respect to weight at ea
 My model serialized in the file "FFNNs" using pickle contains 800 nodes for the first hidden layer, 500 nodes for the second hidden layer, and a learning rate of .01. It is important to note some limitations of my model. When flattening a 28x28 image to a 784x1 array, we lose the ability to give the positional context of a pixel value relative to other pixel values to the FFNN. Error can come from not having this positional context. Convolutional Neural Networks (CNN) use a convolutional layer that can more adequately hold on to this positional information. An additional note on the accuracy of the model is the classification of GIMP images. The GIMP images for my stored model has an accuracy of 100%. However, on other trained models I found it likely for this number to fluctuate between 80-100%. A reason for this potential discrepency between accuracy on other trained models is that the GIMP images were not normalized exactly the same way as the Keras dataset. Although I imported 28x28 images, flattened the vector to 784x1, and normalized the pixel values to 0-1, there are other potential sources of error differentiating my GIMP images from that of the Keras dataset. Potential sources of error include centering of the handwritten digit, the brush stroke size used to make the digit, or use of a computer mouse to draw the image (versus the technique used to draw those of the Keras dataset). Given these limitations, my model performed at 97% accuracy on the Keras test set, and 100% on my GIMP image dataset. 
 
 ## Sources
-https://keras.io/datasets/
-https://towardsdatascience.com/image-classification-in-10-minutes-with-mnist-dataset-54c35b77a38d
-https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6
-https://enlight.nyc/projects/neural-network/
-https://medium.com/tebs-lab/how-to-classify-mnist-digits-with-different-neural-network-architectures-39c75a0f03e3
-https://www.youtube.com/watch?v=UJwK6jAStmg
-http://neuralnetworksanddeeplearning.com/chap1.html
-http://neuralnetworksanddeeplearning.com/chap2.html
-https://ml-cheatsheet.readthedocs.io/en/latest/backpropagation.html
-https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.normal.html
-https://ml-cheatsheet.readthedocs.io/en/latest/backpropagation.html
-https://eli.thegreenplace.net/2016/the-softmax-function-and-its-derivative/
-https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c
-https://dev.to/shamdasani/build-a-flexible-neural-network-with-backpropagation-in-python
+https://keras.io/datasets/ <br /> 
+https://towardsdatascience.com/image-classification-in-10-minutes-with-mnist-dataset-54c35b77a38d <br /> 
+https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6 <br /> 
+https://enlight.nyc/projects/neural-network/ <br /> 
+https://medium.com/tebs-lab/how-to-classify-mnist-digits-with-different-neural-network-architectures-39c75a0f03e3 <br /> 
+https://www.youtube.com/watch?v=UJwK6jAStmg <br /> 
+http://neuralnetworksanddeeplearning.com/chap1.html <br /> 
+http://neuralnetworksanddeeplearning.com/chap2.html <br /> 
+https://ml-cheatsheet.readthedocs.io/en/latest/backpropagation.html <br /> 
+https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.normal.html <br /> 
+https://ml-cheatsheet.readthedocs.io/en/latest/backpropagation.html <br /> 
+https://eli.thegreenplace.net/2016/the-softmax-function-and-its-derivative/ <br /> 
+https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c <br /> 
+https://dev.to/shamdasani/build-a-flexible-neural-network-with-backpropagation-in-python <br /> 
 
 
