@@ -2,7 +2,7 @@
 
 ## GENERAL OVERVIEW
 
-This is the readme for the "FFNN.py" file, created by George Barker for CSCI315 Artificial Intelligence with Professor Cody Watson. 
+This is the readme for the "FFNN.py" file, created by George Barker.
 
 This python file codes a FEED FORWARD NEURAL NETWORK (FFNN) with 97% accuracy trained using the MNIST dataset to recognize and predict handwritten digits.
 
